@@ -1,7 +1,7 @@
 import { useQuery } from "@tanstack/react-query";
 import { githubApi } from "../../api/githubApi";
 import { Issue, State } from '../interfaces/issue';
-import { sleep } from "../../helpers/sleep";
+//import { sleep } from "../../helpers/sleep";
 import { useState, useEffect } from 'react';
 
 interface Props {
@@ -13,7 +13,7 @@ interface Props {
 //const getIssues = async(labels: string[] = [], state?: State, page: number = 1): Promise<Issue[]> =>{
 const getIssues = async({labels, state, page = 1}:Props): Promise<Issue[]> =>{
 
-  await sleep(2);
+  //await sleep(2);
 
   const params = new URLSearchParams();
 
